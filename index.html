@@ -4,7 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ishonch</title>
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+	integrity="sha512-esCylxvZEDuZ+3L2JRa6wYVNDihaDw5fDBUPZ9X9igrCIMHILsPiR4A7+dKmqqzvvIH8lzRlRV4b4V7Q9es/ew=="
+	crossorigin="anonymous"
+	/>
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+	integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+	crossorigin="anonymous"
+	/>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </head>
 <body>
 	<!-- Site Header start -->
@@ -17,7 +31,7 @@
 				<form action="#" class="site-header__form" method="GET">
 					<input type="search" name="search" class="site-header__search" placeholder="Введите поисковый запрос">
 					<button class="site-header__form-btn" type="submit">
-						<img src="img/vector.svg" alt="search" width="16" height="16" class="site-header__form-img">
+						<img src="img/Vector.svg" alt="search" width="16" height="16" class="site-header__form-img">
 					</button>
 				</form>
 				<ul class="site-header__list">
@@ -50,7 +64,7 @@
 		<div class="categories">
 			<ul class="categories__list">
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/compass.svg" width="32" height="32" alt="vse-tovari" class="categories__img">
 						</div>
@@ -58,7 +72,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/tv.svg" alt="media" class="categories__img">
 						</div>
@@ -66,7 +80,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/phone.svg" alt="phones" class="categories__img">
 						</div>
@@ -74,7 +88,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/laptop.svg" alt="laptop" class="categories__img">
 						</div>
@@ -82,7 +96,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/for-home.svg" alt="for-home" class="categories__img">
 						</div>
@@ -90,7 +104,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/kitchen.svg" alt="kitchen" class="categories__img">
 						</div>
@@ -98,7 +112,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/garden.svg" alt="garden and home" class="categories__img">
 						</div>
@@ -106,7 +120,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/avto.svg" alt="avtotovari" class="categories__img">
 						</div>
@@ -114,7 +128,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/sport.svg" alt="sport" class="categories__img">
 						</div>
@@ -122,7 +136,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/xiti.svg" alt="xiti" class="categories__img">
 						</div>
@@ -130,7 +144,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" href="#" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/new.svg" alt="new" class="categories__img">
 						</div>
@@ -138,7 +152,7 @@
 					</a>
 				</li>
 				<li class="categories__item">
-					<a href="#" class="categories__link">
+					<a onclick="dropDown()" class="categories__link">
 						<div class="categories__img-wrapper">
 							<img src="img/aksiya.svg" alt="aksiya" class="categories__img">
 						</div>
@@ -152,7 +166,7 @@
 
 
 	<!-- Dropdown start -->
-	<div class="subcategory__dropdown">
+	<div id="dropdown" class="subcategory__dropdown">
 		<div class="container">
 			<div class="subcategory__container">
 				<div class="subcategory__wrapper">
@@ -203,7 +217,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="subcategory__wrapper">
+				<div class="subcategory__wrapper subcategory__last">
 					<h4 class="subcategory__title">Мобильные телефоны и смарфоны</h4>
 					<ul class="subcategory__list">
 						<li class="subcategory__item">
@@ -218,7 +232,7 @@
 					</ul>
 				</div>
 				<div class="subcategory__ad">
-					<img src="img/8.png" alt="ad" class="subcategory__img">
+					<img src="img/8.svg" alt="ad" class="subcategory__img">
 					<div class="subcategory__ad-info">
 						<div class="subcategory__sale-box">
 							<img src="img/sale.svg" alt="sale" class="subcategory__sale-img">
@@ -233,5 +247,48 @@
 		</div>
 	</div>
 	<!-- Dropdown end -->
+
+	<!-- slideshow start -->
+	<div class="slideshow">
+		<div class="glide">
+			<div class="glide__track" data-glide-el="track">
+				<ul class="glide__slides">
+					<li class="glide__slide">
+						<div class="slideshow__text-wrapper">
+							<h2 class="slideshow__title">Великолепные скиди на технику Apple.</h2>
+							<p class="slideshow__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
+							<a href="#" class="slideshow__btn">Узнать подробнее</a>
+						</div>
+						<img src="img/slideshow.svg" alt="laptop" class="slideshow__img">
+					</li>
+					<li class="glide__slide">
+						<div class="slideshow__text-wrapper">
+							<h2 class="slideshow__title">Великолепные скиди на технику Apple.</h2>
+							<p class="slideshow__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
+							<a href="#" class="slideshow__btn">Узнать подробнее</a>
+						</div>
+						<img src="img/slideshow.svg" alt="laptop" class="slideshow__img">
+					</li>
+					<li class="glide__slide">
+						<div class="slideshow__text-wrapper">
+							<h2 class="slideshow__title">Великолепные скиди на технику Apple.</h2>
+							<p class="slideshow__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
+							<a href="#" class="slideshow__btn">Узнать подробнее</a>
+						</div>
+						<img src="img/slideshow.svg" alt="laptop" class="slideshow__img">
+					</li>
+				</ul>
+			</div>
+			<div class="glide__arrows" data-glide-el="controls">
+				<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+			</div>
+		</div>
+	</div>
+	<!-- slideshow end -->
+
+	<script>
+		new Glide('.glide').mount()
+	</script>
 </body>
 </html>
