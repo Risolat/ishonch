@@ -4,21 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ishonch</title>
-	<link
-	rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
-	integrity="sha512-esCylxvZEDuZ+3L2JRa6wYVNDihaDw5fDBUPZ9X9igrCIMHILsPiR4A7+dKmqqzvvIH8lzRlRV4b4V7Q9es/ew=="
-	crossorigin="anonymous"
-	/>
-	<link
-	rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
-	integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
-	crossorigin="anonymous"
-	/>
 	<link rel="stylesheet" href="css/main.css">
-	<script src="js/script.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+	<link rel="stylesheet" href="css/glide.core.min.css">
+	<link rel="stylesheet" href="css/glide.theme.min.css">
 </head>
 <body>
 	<!-- Site Header start -->
@@ -253,42 +241,356 @@
 		<div class="glide">
 			<div class="glide__track" data-glide-el="track">
 				<ul class="glide__slides">
-					<li class="glide__slide">
+					<li class="glide__slide slideshow__item">
 						<div class="slideshow__text-wrapper">
 							<h2 class="slideshow__title">Великолепные скиди на технику Apple.</h2>
 							<p class="slideshow__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
 							<a href="#" class="slideshow__btn">Узнать подробнее</a>
 						</div>
-						<img src="img/slideshow.svg" alt="laptop" class="slideshow__img">
+						<div class="slideshow-box"></div>
 					</li>
-					<li class="glide__slide">
+					<li class="glide__slide slideshow__item">
 						<div class="slideshow__text-wrapper">
 							<h2 class="slideshow__title">Великолепные скиди на технику Apple.</h2>
 							<p class="slideshow__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
 							<a href="#" class="slideshow__btn">Узнать подробнее</a>
 						</div>
-						<img src="img/slideshow.svg" alt="laptop" class="slideshow__img">
+						<div class="slideshow-box"></div>
 					</li>
-					<li class="glide__slide">
+					<li class="glide__slide slideshow__item">
 						<div class="slideshow__text-wrapper">
 							<h2 class="slideshow__title">Великолепные скиди на технику Apple.</h2>
 							<p class="slideshow__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
 							<a href="#" class="slideshow__btn">Узнать подробнее</a>
 						</div>
-						<img src="img/slideshow.svg" alt="laptop" class="slideshow__img">
+						<div class="slideshow-box"></div>
 					</li>
 				</ul>
 			</div>
 			<div class="glide__arrows" data-glide-el="controls">
-				<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+				<button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+					<img src="img/arrowright.svg" alt="arrow" class="slideshow__arrow slideshow__arrow-right">
+				</button>
+				<button class="slide-arrow glide__arrow glide__arrow--right" data-glide-dir=">">
+					<img src="img/arrowleft.svg" alt="arrow" class="slideshow__arrow slideshow__arrow-left">
+				</button>
 			</div>
 		</div>
 	</div>
 	<!-- slideshow end -->
 
-	<script>
-		new Glide('.glide').mount()
-	</script>
+	
+	<div class="popular-products">
+		<p class="popular-products__heading">Самое популярное</p>
+		<div class="popular">
+			<div class="glide__track" data-glide-el="track">
+				<ul class="glide__slides products__list">
+					<li class="glide__slide products__item">
+						<img src="img/popular1.svg" alt="laptop" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/popular2.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPad Pro 11" 256GB Wi-Fi Cell Space Grey</p>
+						<p class="products__price">от 500,000 сум.</p>
+						<p class="products__price-blur">16.270.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/popular3.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Green (MWM62RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/popular4.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/image.svg" alt="phone" class="products__img">
+						<p class="products__text">Наушники Bluetooth Beats Studio3 Wireless Blue</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/popular6.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+				</ul>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow popular-glide__arrow--left" data-glide-dir="<">
+						<img src="img/arrowright.svg" alt="arrow" class="slideshow__arrow slideshow__arrow-left">
+					</button>
+					<button class="slide-arrow glide__arrow popular-glide__arrow--right" data-glide-dir=">">
+						<img src="img/arrowleft.svg" alt="arrow" class="slideshow__arrow slideshow__arrow-right">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<p class="best-suggestions__heading">Лучшие предложения</p>
+		<div class="best-suggestions">
+			<div class="best-suggestions__products">
+				<div class="best-suggestions__big">
+					<img src="img/big1.svg" alt="phone" class="best-suggestions__big-img">
+					<p class="best-suggestions__big-title">Смартфон Apple iPhone 11 64GB Black (MWLT2RU/A)</p>
+					<p class="best-suggestions__big-price">300,000 сум.</p>
+				</div>
+				<ul class="products__list">
+					<li class="products__item">
+						<img src="img/best1.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+					<li class="products__item">
+						<img src="img/best2.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+					<li class="products__item">
+						<img src="img/best3.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+					<li class="products__item">
+						<img src="img/best4.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+					<li class="products__item">
+						<img src="img/best5.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+					<li class="products__item">
+						<img src="img/best6.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+					<li class="products__item">
+						<img src="img/best7.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+					<li class="products__item">
+						<img src="img/best8.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>		
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="sale">
+			<ul class="sale__list">
+				<li class="sale__item">
+					<div class="sale__text-wrapper">
+						<p class="sale__title">Великолепные скиди на технику Apple.</p>
+						<p class="sale__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
+						<a href="#" class="sale__btn">Узнать подробнее</a>
+					</div>
+					<div class="sale__img-box-1"></div>
+				</li>
+				<li class="sale__item">
+					<div class="sale__text-wrapper">
+						<p class="sale__title">Великолепные скиди на технику Apple.</p>
+						<p class="sale__text">Весь ассортимент техники Apple со скидкой до -45% *</p>
+						<a href="#" class="sale__btn">Узнать подробнее</a>
+					</div>
+					<div class="sale__img-box-2"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="popular-products">
+		<p class="popular-products__heading">Это часто покупают</p>
+		<div class="popular">
+			<div class="glide__track" data-glide-el="track">
+				<ul class="glide__slides products__list">
+					<li class="glide__slide products__item">
+						<img src="img/buy1.svg" alt="laptop" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/buy.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPad Pro 11" 256GB Wi-Fi Cell Space Grey</p>
+						<p class="products__price">от 500,000 сум.</p>
+						<p class="products__price-blur">16.270.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/buy3.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Green (MWM62RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/buy4.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/buy5.svg" alt="phone" class="products__img">
+						<p class="products__text">Наушники Bluetooth Beats Studio3 Wireless Blue</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+					<li class="glide__slide products__item">
+						<img src="img/buy6.svg" alt="phone" class="products__img">
+						<p class="products__text">Apple iPhone 11 128GB Black (MWM02RU/A)</p>
+						<p class="products__price">от 300,000 сум.</p>
+						<p class="products__price-blur">3.000.000 cум.</p>
+					</li>
+				</ul>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow popular-glide__arrow--left" data-glide-dir="<">
+						<img src="img/arrowright.svg" alt="arrow" class="slideshow__arrow slideshow__arrow-left">
+					</button>
+					<button class="slide-arrow glide__arrow popular-glide__arrow--right" data-glide-dir=">">
+						<img src="img/arrowleft.svg" alt="arrow" class="slideshow__arrow slideshow__arrow-right">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-box">
+		<div class="container">
+			<div class="footer__container">
+				<div class="footer footer__category">
+					<p class="footer__title">Категории</p>
+					<ul class="footer__list footer__categories">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Все товары</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Медиа</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Смартфоны</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Компьютеры и оргтехнка</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Для дома</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Для кухни</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Дом и сад</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Автовары</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Спорт и дети</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Хиты продаж</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Новинки</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Акции</a>
+						</li>
+					</ul>
+				</div>	
+				<div class="footer">
+					<p class="footer__title">Разделы сайта</p>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Магазины</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Доставка и оплата</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Условия рассрочки</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Контакты</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">FAQ</a>
+						</li>
+					</ul>
+				</div>	
+				<div class="footer footer__address-box">
+					<p class="footer__title">Контакты</p>
+					<div class="footer__address">
+						<p class="footer__text">Телефоны</p>
+						<a href="tel:+998735152222" class="footer__tel">+998735152222</a>
+						<p class="footer__text">Адрес</p>
+						<p class="footer__address-text">ул. Амира Тимура, д 32 А</p>
+					</div>
+				</div>	
+				<div class="footer">
+					<div class="footer__cocial-media">
+						<p class="footer__title">Мы в социальных сетях</p>
+						<p class="footer__social-text">Следите за нами в социальных сетях и вы всегда будете в курсе всех новинок и самых актуальных предложений.</p>
+						<ul class="footer__social-list">
+							<li class="footer__social-item">
+								<a href="#" class="footer__social-link">
+									<img src="img/facebook1.svg" alt="facebook" class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a href="#" class="footer__social-link">
+									<img src="img/vk2.svg" alt="vk" class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a href="#" class="footer__social-link">
+									<img src="img/instagram1.svg" alt="insta" class="footer__social-icon">
+								</a>
+							</li>
+						</ul>
+						<p class="footer__blur-text">© 2020 год. Все права защищены.
+							Ishonch Kredit Savdo и Ишонч являются зарегистрированными торговыми марками ООО “Ishonch Kredit Savdo”. При копировании информации с сайта, ссылка обязательна.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+	var config1= {
+		type: 'carousel',
+		perView: 6
+	}
+	new Glide('.popular', config1).mount();
+
+	var config = {
+		type: 'carousel'
+	}
+	new Glide('.glide', config).mount()
+</script>
 </body>
 </html>
